@@ -7,6 +7,8 @@ import (
 	"unicode/utf8"
 )
 
+// Fprintt renders according to a template bound to the data and writes to w.
+// It returns the number of bytes written and any write error encountered.
 func Fprintt(w io.Writer, template string, data interface{}) (n int, err error) {
 
 	// Turn whatever `data` is (probably a struct) into a
