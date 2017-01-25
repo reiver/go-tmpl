@@ -2,7 +2,7 @@
 Package tmpl provides templating capabilities.
 
 The tmpl.Fprintt(), tmpl.Printt(), and tmpl.Sprintt() funcs are similar to
-the Go built-in fmt.Fprintf(), fmt.Printf(), fmt.Sprintf();
+the Go built-in fmt.Fprintf(), fmt.Printf(), fmt.Sprintf() funcs;
 except that it uses template-style for the format string.
 
 For example:
