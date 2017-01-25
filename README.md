@@ -31,4 +31,7 @@ person.Age  = "41"
 person.Sex  = "male"
 
 tmpl.Printt("Hello {{.Name}}, you are {{.Age}} years old.", person)
+
+// Output:
+// Hello Joe Blow, you are 41 years old.
 ```
