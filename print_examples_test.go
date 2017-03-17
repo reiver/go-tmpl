@@ -69,7 +69,7 @@ func ExampleSprintt() {
 	// Hello Joe Blow, you are 41 years old.
 }
 
-func ExampleSprintt_stringArray() {
+func ExampleSprintt_stringSlice() {
 
 	type Party struct {
 		People []string
