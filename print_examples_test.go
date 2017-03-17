@@ -68,3 +68,21 @@ func ExampleSprintt() {
 	// Output:
 	// Hello Joe Blow, you are 41 years old.
 }
+
+func ExampleSprintt_stringArray() {
+
+	type Party struct {
+		People []string
+	}
+
+	var party Party
+
+	party.People = []string{"Joe Blow", "Douglas Wayne"}
+
+	s := tmpl.Sprintt("The people attending the party are: {{.People}}", party)
+
+	io.WriteString(os.Stdout, s)
+
+	// Output:
+	// The people attending the party are: [Joe Blow Douglas Wayne]
+}
